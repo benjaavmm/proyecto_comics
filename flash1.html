@@ -25,27 +25,63 @@
 </head>
 <body>
     <!-- Incluye el navbar -->
-    <iframe src="navbar.html" frameborder="0" scrolling="no" style="width: 100%; height: 180px;"></iframe>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="Comics Sharingann" width="100">
+            </a>
+            <div class="d-flex align-items-center">
+                <form class="d-flex me-2">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_principal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preventas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liquidación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Identifícate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Contenido de la página -->
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <!-- Imagen de la portada del cómic -->
-                <img src="./assets/img/comic1.jpg" alt="Portada del Cómic" class="img-fluid">
+                <img src="./assets/img/flash.jpg" alt="Portada del Cómic" class="img-fluid">
             </div>
             <div class="col-md-6">
                 <!-- Título del cómic -->
-                <h1>Nombre del Cómic</h1>
+                <h1>The Flash N°52</h1>
                 <!-- Descripción del cómic -->
                 <div class="comic-description">
                     <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in diam velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nec massa eget lectus fringilla rutrum sed eu ipsum.</p>
+                    <p>"El cómic de Flash sigue las aventuras de Barry Allen, un científico convertido en superhéroe después de ser alcanzado por un rayo y bañado en productos químicos. Dotado de velocidad sobrehumana, Barry protege Central City enfrentando a villanos y desafíos temporales. Con una narrativa llena de acción y giros emocionantes, el cómic de Flash ofrece una experiencia trepidante llena de intriga y heroísmo."</p>
                 </div>
                 <!-- Detalles del cómic (precio, cantidad, botón de añadir al carrito, etc.) -->
                 <div class="comic-details">
                     <h3>Detalles</h3>
-                    <p>Precio: $XX.XX</p>
+                    <p>Precio: $21.990</p>
                     <label for="cantidad">Cantidad:</label>
                     <input type="number" id="cantidad" class="form-control" min="1" value="1">
                     <button class="btn btn-primary mt-2">Añadir al Carrito</button>
