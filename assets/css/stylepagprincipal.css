@@ -15,6 +15,16 @@ img {
     color: #a40202; /* Color de texto normal */
 }
 
+/* Estilo para el título */
+.container h1 {
+    color: #c50606;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+
 .navbar-nav .nav-link:hover {
     color: #300000; /* Color de texto al pasar el mouse por encima */
 }
