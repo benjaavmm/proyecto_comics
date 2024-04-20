@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Individual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <style>
+        /* Estilos adicionales personalizados */
+        .comic-info {
+            margin-top: 50px;
+        }
+        .comic-info img {
+            max-width: 100%;
+            height: auto;
+        }
+        .comic-details {
+            margin-top: 20px;
+        }
+        .comic-description {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Incluye el navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="Comics Sharingann" width="100">
+            </a>
+            <div class="d-flex align-items-center">
+                <form class="d-flex me-2">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_principal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preventas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liquidación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Identifícate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenido de la página -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Imagen de la portada del cómic -->
+                <img src="./assets/img/titans.png" alt="Portada del Cómic Batman" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <!-- Título del cómic -->
+                <h1>Jovenes Titanes #1: El Reinado de los Superhombres Cibernéticos</h1>
+                <!-- Descripción del cómic -->
+                <div class="comic-description">
+                    <h3>Descripción</h3>
+                    <p>"En este emocionante número, los Jóvenes Titanes están más separados que nunca. Damian Wayne, también conocido como Robin, recluta a Starfire, Raven, Beast Boy y el nuevo Kid Flash para unirse en una pelea contra su propio abuelo, Ra s al Ghul. Pero el verdadero liderazgo va más allá de tener la última palabra. ¿Está Robin realmente a la altura de la tarea? ¿O los Jóvenes Titanes rechazarán a este diminuto dictador?
+
+                        Este cómic promete acción, intriga y dilemas morales mientras los Jóvenes Titanes se enfrentan a un enemigo que amenaza su unidad y su mundo. ¡Prepárate para descubrir el secreto del Mariscal de Campo Fantasma en esta emocionante entrega!"</p>
+                </div>
+                <!-- Detalles del cómic (precio, cantidad, botón de añadir al carrito, etc.) -->
+                <div class="comic-details">
+                    <h3>Detalles</h3>
+                    <p>Precio: $19.900</p>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" class="form-control" min="1" value="1">
+                    <button class="btn btn-primary mt-2">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts al final del cuerpo -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
