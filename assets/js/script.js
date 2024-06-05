@@ -56,3 +56,82 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    // Arreglo para almacenar los elementos en el carrito
+    let cartItems = [];
+
+    // Función para agregar elementos al carrito
+    $('.add-to-cart').on('click', function(event) {
+        event.preventDefault();
+        
+        // Obtener información del cómic
+        const comicBox = $(this).closest('.comic-box');
+        const comicName = comicBox.find('h3').text();
+        const comicPrice = parseFloat(comicBox.find('.comic-price').text().replace('$', ''));
+        const comicQuantity = parseInt(comicBox.find('input').val());
+
+        // Verificar si el cómic ya está en el carrito
+        const existingItem = cartItems.find(item => item.name === comicName);
+        if (existingItem) {
+            existingItem.quantity += comicQuantity;
+        } else {
+            cartItems.push({
+                name: comicName,
+                price: comicPrice,
+                quantity: comicQuantity
+            });
+        }
+
+        // Actualizar el contador del carrito
+        updateCartCount();
+
+        // Mostrar mensaje de confirmación
+        alert('Se ha añadido al carrito: ' + comicName);
+
+        // Actualizar la visualización del carrito
+        displayCartItems();
+    });
+
+    // Función para actualizar el contador del carrito
+    function updateCartCount() {
+        const totalCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+        $('#cart-count').text(totalCount);
+
+        // Mostrar u ocultar la sección del carrito dependiendo de si hay elementos en él
+        if (totalCount > 0) {
+            $('#cart-icon').addClass('active');
+        } else {
+            $('#cart-icon').removeClass('active');
+        }
+    }
+
+    // Función para mostrar los elementos en el carrito
+    function displayCartItems() {
+        $('#cart-items').empty();
+        let totalAmount = 0;
+        cartItems.forEach(item => {
+            const totalPrice = item.price * item.quantity;
+            totalAmount += totalPrice;
+            $('#cart-items').append(`
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    ${item.name} - ${item.quantity} unidades - $${totalPrice.toFixed(2)}
+                    <button class="btn btn-danger remove-from-cart" data-name="${item.name}">&times;</button>
+                </li>
+            `);
+        });
+        $('#cart-total-page').text(totalAmount.toFixed(2));
+    }
+
+    // Función para remover elementos del carrito
+    $(document).on('click', '.remove-from-cart', function() {
+        const itemName = $(this).data('name');
+        cartItems = cartItems.filter(item => item.name !== itemName);
+        updateCartCount();
+        displayCartItems();
+    });
+
+    // Inicializar la visualización del carrito
+    updateCartCount();
+    displayCartItems();
+});
