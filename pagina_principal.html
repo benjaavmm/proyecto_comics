@@ -12,49 +12,57 @@
 </head>
 <body>
      <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="./pagina_principal.html">
-                <img src="./assets/img/logo.png" alt="Comics Sharingann" width="100">
-            </a>
-            <div class="d-flex align-items-center">
-                <form id="searchForm" class="d-flex me-2">
-                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                </form>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="pagina_principal.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Preventas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Liquidación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Identifícate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-light" href="carrito.html">
-                            <img src="./assets/img/carrito.png" alt="Carrito" width="30">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="./pagina_principal.html">
+            <img src="./assets/img/logo.png" alt="Comics Sharingann" width="100">
+        </a>
+        <div class="d-flex align-items-center">
+            <form id="searchForm" class="d-flex me-2">
+                <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina_principal.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCatalogo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Catálogo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownCatalogo">
+                        <li><a class="dropdown-item" href="comicsDC.html">Comics DC</a></li>
+                        <li><a class="dropdown-item" href="Mangas.html">Mangas</a></li>
+                        <li><a class="dropdown-item" href="comicsMarvel.html">Comics Marvel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Preventas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liquidación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Identifícate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-light" href="carrito.html">
+                        <img src="./assets/img/carrito.png" alt="Carrito" width="30">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
     <!-- Texto introductorio -->
     <div class="container mt-5">
