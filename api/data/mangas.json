@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "titulo": "Attack On Titan",
+      "descripcion": "El Escuadr\u00f3n de Reconocimiento planea una jugada arriesgada; Que Eren, en forma de Tit\u00e1n, intente reparar la Muralla Rose, reclamando, por primera vez en un siglo, territorio para los humanos...",
+      "precio": 12990,
+      "imagen": "./assets/img/atackontitan.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Demon Slayer",
+      "descripcion": "Un d\u00eda que Tanjiro estaba volviendo de sus labores, un aldeano le sugiere pasar la noche en su casa para prevenir que se lo morfe un Oni...",
+      "precio": 11990,
+      "imagen": "./assets/img/demonslayer.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Dragon Ball #12: El Desaf\u00edo de Goku y Vegeta",
+      "descripcion": "En esta emocionante entrega de Dragon Ball, los legendarios guerreros Goku y Vegeta se enfrentan a un enemigo formidable lo cual promete acci\u00f3n, poder y emociones intensas...",
+      "precio": 13990,
+      "imagen": "./assets/img/dragonball.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Hunter X Hunter",
+      "descripcion": "Empiezan las elecciones para elegir presidente, como dej\u00f3 dicho Netero. Las elecciones se presentan movidas debido a las tretas de Pariston...",
+      "precio": 13990,
+      "imagen": "./assets/img/hxh.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Jujutsu Kaisen",
+      "descripcion": "Sukuna es libre por un momento, y sus acciones atroces provocan grav\u00edsimos da\u00f1os en el distrito de Shibuya...",
+      "precio": 13990,
+      "imagen": "./assets/img/jujutsukaisen.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "My Hero Academia",
+      "descripcion": "Estamos en un mundo donde abundan los superh\u00e9roes (y los supervillanos). Los mejores humanos son entrenados en la Academia de H\u00e9roes para optimizar sus poderes...",
+      "precio": 11990,
+      "imagen": "./assets/img/myheroacademia.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "Naruto",
+      "descripcion": "Uno de los clones de Naruto se topa frente a frente con Sasuke, con lo que el grupo que ha salido en su b\u00fasqueda logra recuperar finalmente su rastro...",
+      "precio": 11990,
+      "imagen": "./assets/img/naruto.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "Tokyo Revengers",
+      "descripcion": "Takemichi, un fracasado que fue miembro de una banda en su juventud, salta 12 años atrás en el tiempo para salvar a su exnovia de un trágico destino.",
+      "precio": 12990,
+      "imagen": "./assets/img/tokyorevengers.jpg"
+    }
+  ]
+    
+
+
+
+      
+    
+  

@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "titulo": "Aquaman #14: La Marea del Terror",
+      "descripcion": "En las profundidades de los océanos de la Tierra, Aquaman se enfrenta a una nueva ola de terror en el número 14 de su serie...",
+      "precio": 18890,
+      "imagen": "./assets/img/aquaman1.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Detective Comics #400: El Desafío del Hombre Murciélago",
+      "descripcion": "En esta edición histórica, sumérgete en la oscuridad de Gotham City con Batman, Robin y Batgirl enfrentando una de las amenazas más inusuales: el Hombre Murciélago...",
+      "precio": 23990,
+      "imagen": "./assets/img/batman1.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Batman Beyond",
+      "descripcion": "Batman Beyond, un cómic de DC Comics, presenta un futuro distópico donde Terry McGinnis asume el manto de Batman bajo la tutela de un envejecido Bruce Wayne...",
+      "precio": 21990,
+      "imagen": "./assets/img/batman2.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Batman Detective Comics #1000: Celebrando 80 Años de Batman",
+      "descripcion": "En esta edición histórica, Batman se alza como el guardián de Gotham City en su número 1000...",
+      "precio": 25000,
+      "imagen": "./assets/img/batman3.png"
+    },
+    {
+      "id": 5,
+      "titulo": "The Flash N°52",
+      "descripcion": "El cómic de Flash sigue las aventuras de Barry Allen, un científico convertido en superhéroe después de ser alcanzado por un rayo y bañado en productos químicos...",
+      "precio": 21990,
+      "imagen": "./assets/img/flash.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Green Lantern: Tales of the Sinestro Corps",
+      "descripcion": "Sumérgete en el universo de Linterna Verde, donde los valientes protectores del orden cósmico, los Green Lantern Corps, patrullan los confines del espacio...",
+      "precio": 19990,
+      "imagen": "./assets/img/linternaverde.jpg"
+    }
+  ]
+  

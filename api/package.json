@@ -1,0 +1,16 @@
+{
+    "name": "api-comics",
+    "version": "1.0.0",
+    "description": "API para comics y mangas",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "Benjamin Vallejos",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.19.2"
+    }
+  }
+  

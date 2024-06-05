@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "titulo": "The Astonishing Ant-Man",
+      "descripcion": "The Astonishing Ant-Man sigue las aventuras de Scott Lang, un exconvicto y experto en tecnología que asume el papel del héroe diminuto, Ant-Man...",
+      "precio": 23990,
+      "imagen": "./assets/img/antman.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Black Widow: Widow's Sting",
+      "descripcion": "Black Widow: Widow's Sting sigue los pasos de Natasha Romanoff, también conocida como la Viuda Negra, en una emocionante misión llena de intriga y peligro...",
+      "precio": 24990,
+      "imagen": "./assets/img/blackwidow.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "The Avengers: Captain America Lives Again!",
+      "descripcion": "The Avengers: Captain America Lives Again! presenta el emocionante regreso del legendario Capitán América a las filas de los Vengadores...",
+      "precio": 22990,
+      "imagen": "./assets/img/capitanamerica.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "The Invincible Iron Man: Cry Revolution!",
+      "descripcion": "The Invincible Iron Man: Cry Revolution! narra la emocionante historia de Tony Stark, también conocido como Iron Man, mientras se enfrenta a una nueva amenaza que desafía su ingenio y su tecnología...",
+      "precio": 24990,
+      "imagen": "./assets/img/ironman.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "Marvel Super Heroes: Secret Wars",
+      "descripcion": "Marvel Super Heroes: Secret Wars es una saga épica que reúne a los héroes y villanos más emblemáticos del Universo Marvel en una batalla cósmica sin precedentes...",
+      "precio": 20990,
+      "imagen": "./assets/img/secretwars.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "The Mighty Thor: The Wrath Of Odin!",
+      "descripcion": "The Mighty Thor: The Wrath of Odin! sumerge a los lectores en una saga épica que sigue las hazañas del poderoso dios nórdico del trueno...",
+      "precio": 21990,
+      "imagen": "./assets/img/thor.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "The Amazing Spider-Man",
+      "descripcion": "The Amazing Spider-Man, un pilar del universo Marvel Comics, sigue las hazañas de Peter Parker, un estudiante de secundaria que adquiere habilidades arácnidas tras ser mordido por una araña radioactiva...",
+      "precio": 18990,
+      "imagen": "./assets/img/spiderman.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "The Incredible Hulk And Now The Wolverine!",
+      "descripcion": "The Incredible Hulk and Now the Wolverine es un cómic que presenta un emocionante crossover entre dos de los héroes más icónicos de Marvel Comics: Hulk y Wolverine...",
+      "precio": 22990,
+      "imagen": "./assets/img/hulk.png"
+    }
+  ]
+  
