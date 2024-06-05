@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comics sharingann - Página Principal</title>
+    <title>Comics Sharingann - Página Principal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/stylepagprincipal.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script> 
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="./pagina_principal.html">
                 <img src="./assets/img/logo.png" alt="Comics Sharingann" width="100">
             </a>
             <div class="d-flex align-items-center">
-                <form class="d-flex me-2">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <form id="searchForm" class="d-flex me-2">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                     <button class="btn btn-outline-primary" type="submit">Buscar</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,11 +48,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-light" href="carrito.html">
-                            <img src="./assets/img/carrito.png" alt="Comics Sharingann" width="30">
+                            <img src="./assets/img/carrito.png" alt="Carrito" width="30">
                         </a>
-                      </li>
+                    </li>
                 </ul>
             </div>
+        </div>
+    </nav>
 
     <!-- Texto introductorio -->
     <div class="container mt-5">
@@ -60,8 +63,8 @@
         <p class="text-center">¡Sumérgete en el emocionante mundo de las viñetas y las historias épicas!</p>
     </div>
 
-     <!-- Carrusel de imágenes -->
-     <div class="container-fluid mt-5 px-0">
+    <!-- Carrusel de imágenes -->
+    <div class="container-fluid mt-5 px-0">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -95,7 +98,7 @@
     
     <!-- Contenedor de los cómics -->
     <div class="container mt-3">
-        <div class="row">
+        <div class="row" id="comics-container">
             <!-- Comic 1 -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="comic-box">
@@ -103,9 +106,9 @@
                         <img src="./assets/img/flash.jpg" alt="Comic 1" class="comic-image">
                     </a>
                     <h3>The Flash N°52</h3>
-                    <p>$21.990</p>
-                    <input type="number" class="form-control mb-2" placeholder="Cantidad" min="1" value="1">
-                    <button class="btn btn-primary">Añadir al Carro</button>
+                    <p class="comic-price">$21.990</p>
+                    <input type="number" class="form-control mb-2 comic-quantity" placeholder="Cantidad" min="1" value="1">
+                    <button class="btn btn-primary add-to-cart">Añadir al Carro</button>
                 </div>
             </div>
             <!-- Comic 2 -->
@@ -115,9 +118,9 @@
                         <img src="./assets/img/linternaverde.jpg" alt="Comic 2" class="comic-image">
                     </a>
                     <h3>Green Lantern: Tales of the Sinestro Corps</h3>
-                    <p>$19.990</p>
-                    <input type="number" class="form-control mb-2" placeholder="Cantidad" min="1" value="1">
-                    <button class="btn btn-primary">Añadir al Carro</button>
+                    <p class="comic-price">$19.990</p>
+                    <input type="number" class="form-control mb-2 comic-quantity" placeholder="Cantidad" min="1" value="1">
+                    <button class="btn btn-primary add-to-cart">Añadir al Carro</button>
                 </div>
             </div>
             <!-- Comic 3 -->
@@ -127,9 +130,9 @@
                         <img src="./assets/img/batman1.jpg" alt="Comic 3" class="comic-image">
                     </a>    
                     <h3>Batman</h3>
-                    <p>$23.990</p>
-                    <input type="number" class="form-control mb-2" placeholder="Cantidad" min="1" value="1">
-                    <button class="btn btn-primary">Añadir al Carro</button>
+                    <p class="comic-price">$23.990</p>
+                    <input type="number" class="form-control mb-2 comic-quantity" placeholder="Cantidad" min="1" value="1">
+                    <button class="btn btn-primary add-to-cart">Añadir al Carro</button>
                 </div>
             </div>
             <!-- Comic 4 -->
@@ -139,9 +142,9 @@
                         <img src="./assets/img/dragonball.jpg" alt="Comic 4" class="comic-image">
                     </a>
                     <h3>Dragon Ball</h3>
-                    <p>$13.990</p>
-                    <input type="number" class="form-control mb-2" placeholder="Cantidad" min="1" value="1">
-                    <button class="btn btn-primary">Añadir al Carro</button>
+                    <p class="comic-price">$13.990</p>
+                    <input type="number" class="form-control mb-2 comic-quantity" placeholder="Cantidad" min="1" value="1">
+                    <button class="btn btn-primary add-to-cart">Añadir al Carro</button>
                 </div>
             </div>
             <!-- Comic 5 -->
@@ -151,9 +154,9 @@
                         <img src="./assets/img/demonslayer.jpg" alt="Comic 5" class="comic-image">
                     </a>
                     <h3>Demon Slayer</h3>
-                    <p>$11.990</p>
-                    <input type="number" class="form-control mb-2" placeholder="Cantidad" min="1" value="1">
-                    <button class="btn btn-primary">Añadir al Carro</button>
+                    <p class="comic-price">$11.990</p>
+                    <input type="number" class="form-control mb-2 comic-quantity" placeholder="Cantidad" min="1" value="1">
+                    <button class="btn btn-primary add-to-cart">Añadir al Carro</button>
                 </div>
             </div>
             <!-- Comic 6 -->
@@ -163,9 +166,9 @@
                         <img src="./assets/img/batman2.jpg" alt="Comic 6" class="comic-image">
                     </a>
                     <h3>Batman Beyond</h3>
-                    <p>$21.990</p>
-                    <input type="number" class="form-control mb-2" placeholder="Cantidad" min="1" value="1">
-                    <button class="btn btn-primary">Añadir al Carro</button>
+                    <p class="comic-price">$21.990</p>
+                    <input type="number" class="form-control mb-2 comic-quantity" placeholder="Cantidad" min="1" value="1">
+                    <button class="btn btn-primary add-to-cart">Añadir al Carro</button>
                 </div>
             </div>
             <!-- Comic 7 -->
@@ -175,9 +178,9 @@
                         <img src="./assets/img/spiderman.jpg" alt="Comic 7" class="comic-image">
                     </a>
                     <h3>The Amazing Spider-Man</h3>
-                    <p>$18.990</p>
-                    <input type="number" class="form-control mb-2" placeholder="Cantidad" min="1" value="1">
-                    <button class="btn btn-primary">Añadir al Carro</button>
+                    <p class="comic-price">$18.990</p>
+                    <input type="number" class="form-control mb-2 comic-quantity" placeholder="Cantidad" min="1" value="1">
+                    <button class="btn btn-primary add-to-cart">Añadir al Carro</button>
                 </div>
             </div>
             <!-- Comic 8 -->
@@ -187,9 +190,9 @@
                         <img src="./assets/img/naruto.jpg" alt="Comic 8" class="comic-image">
                     </a>
                     <h3>Naruto</h3>
-                    <p>$11.990</p>
-                    <input type="number" class="form-control mb-2" placeholder="Cantidad" min="1" value="1">
-                    <button class="btn btn-primary">Añadir al Carro</button>
+                    <p class="comic-price">$11.990</p>
+                    <input type="number" class="form-control mb-2 comic-quantity" placeholder="Cantidad" min="1" value="1">
+                    <button class="btn btn-primary add-to-cart">Añadir al Carro</button>
                 </div>
             </div>
         </div>
@@ -204,7 +207,7 @@
                 </div>
                 <div class="store-features_text-container">
                     <div class="store-features_title">Envíos a todo Chile</div>
-                    <div class="store-features_text">Hacemos envíos de lunes a viernes </div>
+                    <div class="store-features_text">Hacemos envíos de lunes a viernes</div>
                 </div>
             </div>
         </div>
@@ -232,51 +235,47 @@
         </div>
     </div>
 
-  <!-- Información adicional -->
-<footer class="footer bg-dark text-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <img src="./assets/img/logo.png" alt="Comics Sharingann" width="100">
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="footer-section">
-                    <h5>Nosotros</h5>
-                    <p>Ayúdanos a ser la mejor tienda de cómics en Chile. Tenemos un enorme catálogo y el despacho más rápido de Chile. ¡Somos tu tienda favorita!</p>
+    <!-- Información adicional -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="./assets/img/logo.png" alt="Comics Sharingann" width="100">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-section">
+                        <h5>Nosotros</h5>
+                        <p>Ayúdanos a ser la mejor tienda de cómics en Chile. Tenemos un enorme catálogo y el despacho más rápido de Chile. ¡Somos tu tienda favorita!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-section">
+                        <h5>AYUDA</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-section">
+                        <h5>Términos y Condiciones</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lorem eu dolor viverra porta.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="footer-section">
-                    <h5>AYUDA</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="footer-section">
-                    <h5>Términos y Condiciones</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lorem eu dolor viverra porta.</p>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p><strong>HORARIOS</strong></p>
+                    <p>Lunes a Jueves 10:00 a 18:00<br>Viernes 10:00 a 14:00</p>
+                    <p><strong>DIRECCIÓN</strong></p>
+                    <p>Santiago</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <p><strong>HORARIOS</strong></p>
-                <p>Lunes a Jueves 10:00 a 18:00<br>Viernes 10:00 a 14:00</p>
-                <p><strong>DIRECCIÓN</strong></p>
-                <p>Santiago</p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-
-    <!-- Footer y scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Scripts -->
     <script src="./assets/js/script.js"></script> 
-    </body>
-    </html>
-    
+</body>
+</html>
