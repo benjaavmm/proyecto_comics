@@ -1,5 +1,5 @@
 {
-    "name": "api-comics",
+    "name": "api",
     "version": "1.0.0",
     "description": "API para comics y mangas",
     "main": "index.js",
