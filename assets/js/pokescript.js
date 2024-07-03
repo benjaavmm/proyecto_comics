@@ -2,6 +2,10 @@ $(document).ready(function() {
     const apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
     const limit = 100; // Obtener 100 Pokémon
 
+    $('#loadPokemonButton').on('click', function() {
+        fetchPokemon();
+    });
+
     function fetchPokemon() {
         $.ajax({
             url: `${apiUrl}?limit=${limit}`,
@@ -45,6 +49,4 @@ $(document).ready(function() {
             }
         });
     }
-
-    fetchPokemon();
 });
